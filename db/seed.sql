@@ -10,6 +10,8 @@ CREATE TABLE department (
   PRIMARY KEY (id)
 );
 
+USE employee_trackerDB;
+
 CREATE TABLE role (
   id INT NOT NULL AUTO_INCREMENT,
   title VARCHAR(30) NULL,
@@ -17,6 +19,8 @@ CREATE TABLE role (
   department_id INT NULL,
   PRIMARY KEY (id)
 );
+
+USE employee_trackerDB;
 
 CREATE TABLE employee (
   id INT NOT NULL AUTO_INCREMENT,
