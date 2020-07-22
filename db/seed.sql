@@ -10,8 +10,6 @@ CREATE TABLE department (
   PRIMARY KEY (id)
 );
 
-USE employee_trackerDB;
-
 CREATE TABLE role (
   id INT NOT NULL AUTO_INCREMENT,
   title VARCHAR(30) NULL,
@@ -19,8 +17,6 @@ CREATE TABLE role (
   department_id INT NULL,
   PRIMARY KEY (id)
 );
-
-USE employee_trackerDB;
 
 CREATE TABLE employee (
   id INT NOT NULL AUTO_INCREMENT,
@@ -31,3 +27,26 @@ CREATE TABLE employee (
   PRIMARY KEY (id)
 );
 
+-- creating test department 
+INSERT INTO department (name)
+VALUES ("Sales");
+
+-- creating test role
+INSERT INTO role (title, salary, department_id)
+VALUES ("Manager", 123.12, 1);
+
+-- creating test employee
+INSERT INTO employee (first_name,last_name,role_id)
+VALUES ("Bob","Builder",1);
+
+SELECT * FROM department;
+
+-- INNER JOIN reffering to values
+SELECT name"Department", title"Title", first_name"First Name", last_name"Last Name", salary"Salary"
+FROM employee 
+INNER JOIN role ON role_id = role.id
+INNER JOIN department ON role.department_id = department.id
+
+UPDATE employee
+SET role_id = ?
+WHERE CustomerID = ?;
