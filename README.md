@@ -18,14 +18,15 @@ Terminal run application for someone to easily interact with information stored 
   
 ## Installation 
   
-After forking the repo, need to run 
+All dependencies in package.json
 ```
-npm init
-npm install mysql inquirer
+npm install
 ```
+should install inquirer and mySQL
   
 ## Usage
   
+Application runs in your terminal and can be called using:
 ```
 node employeeTracker.js
 ```
@@ -37,11 +38,11 @@ Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
   
 ## Contributing
   
-Can fork and edit the repo with new ideas. For major updates, please open an issue first to discuss any changes.
+Feel free to fork and edit the repo with new ideas. For major updates, please open an issue first to discuss any changes.
   
 
 ## Questions
 
-Link to my [GitHub Profile](https://github.com/omata48)
+Link to my [GitHub Profile](https://github.com/omata48)  
 For additional questions feel free to email omata48@outlook.com
     
