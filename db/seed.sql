@@ -42,11 +42,7 @@ VALUES ("Bob","Builder",1);
 SELECT * FROM department;
 
 -- INNER JOIN reffering to values
-SELECT name"Department", title"Title", first_name"First Name", last_name"Last Name", salary"Salary"
-FROM employee 
-INNER JOIN role ON role_id = role.id
-INNER JOIN department ON role.department_id = department.id
-
-UPDATE employee
-SET role_id = ?
-WHERE CustomerID = ?;
+-- SELECT name"Department", title"Title", first_name"First Name", last_name"Last Name", salary"Salary"
+-- FROM employee 
+-- INNER JOIN role ON role_id = role.id
+-- INNER JOIN department ON role.department_id = department.id
