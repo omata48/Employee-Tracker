@@ -70,5 +70,5 @@ module.exports = {
         return answer.route === "Employees";
       },
     },
-  ]
-}
+  ],
+};
